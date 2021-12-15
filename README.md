@@ -13,7 +13,11 @@ And now you have my project on your computer!
 What you first need to do is install xampp if you don't have it, then what you need to do is open it and start the MySQL and Apache server. After doing that what you have to do is click admin on the MySQL server. It opens a window browser, then you have to click de import button on the top, there you have to put the database file that's in the database folder. Also you need to do is install node for the npm commands.
 
 ## Instalation🔧
-Now what you have to do in the terminal (in cmd or a terminal on VSC) you have to do npm install, what that does it installs the dependencies of my project like MySQL2, express, etc. The what you have to do is in the terminal on VSC or cmd, (this obviously on the route to the folder where is my project) you have to put the next command.
+Now what you have to do in the terminal (in cmd or a terminal on VSC) you have to do 
+```
+npm install
+```
+What that does it installs the dependencies of my project like MySQL2, express, etc. The what you have to do is in the terminal on VSC or cmd, (this obviously on the route to the folder where is my project) you have to put the next command.
 ```
 nodemon app
 ```
