@@ -1,0 +1,50 @@
+body{
+    background-color: #f6aeb4;
+}
+
+#input{
+    width: 100%;
+}
+
+input[type=checkbox]{
+    float: right;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #145b87;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container{
+    border-top: 2px solid #159595;
+    margin: 5% 10% 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20%;
+    padding-top: .5em;
+}
+
+.table1{
+    background-color: #f2cd88;
+    width: 100%;
+    height: 30rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.table2{
+    background-color: #f2cd88;
+    height: 30rem;
+}
+
+li{
+    padding: .5em;
+    border-bottom: solid 1px #12307f;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
