@@ -12,22 +12,26 @@
     <h1>WEB PROJECTS</h1>
 
     <div class="grid-container">
-        <form>
-            <input type="input" id="input" placeholder="Put a project">
-            <input type="submit" id="submit" hidden>
-        </form>
             
-        <button onclick="randProjects()">Random Project</button>
+        <div>
+            <form>
+                <input type="input" id="input" class="projects" placeholder="Put a project">
+                <input type="submit" id="submit" hidden>
+            </form>
 
-        <div class="table1" id="tableAll">
+            <div class="table1" id="tableAll">
             
+            </div>
         </div>
+        
+        <div class="divRand">
+            <button onclick="randProjects()" class="projects">Random Project</button>
 
-        <div class="table2" id="tableRand">
-            <ul>
-                <input type="checkbox" name="" id="">
-            </ul>
+            <div class="table2" id="tableRand">
+            
+            </div>
         </div>
+        
     </div>
     <script src="../js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

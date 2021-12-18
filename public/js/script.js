@@ -6,8 +6,6 @@ const tableRand = document.getElementById("tableRand");
 
 const url = "http://localhost:3000";
 
-
-
 submit.addEventListener("click", (e)=>{
     e.preventDefault()
     let data = {
@@ -86,6 +84,8 @@ function Projects(project) {
     `;
 }
 
+
+
 async function randProjects(){
     try {
         const response = await fetch(`${url}/get/one`,{
@@ -96,19 +96,28 @@ async function randProjects(){
         })
         const data = await response.json();
         const project = data[0].project;
+        clearRandProjects()
         randProject(project)
     } catch (error) {
         console.log(error)
     }
 }
 
+function clearRandProjects() {
+    document.querySelector(".table2").innerHTML="";
+}
+
 function randProject(project) {
-    document.querySelector("ul").innerHTML += `
-        <li>
-            ${project}
-        </li>
+    document.querySelector(".table2").innerHTML += `  
+        <ul>
+            <li>
+                ${project}
+            </li>      
+        </ul>
     `;
 }
+
+
 
 async function updateProject() {
     const checked = document.querySelector("input[type=checkbox]:checked");
